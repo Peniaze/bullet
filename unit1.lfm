@@ -1,0 +1,25 @@
+object Form1: TForm1
+  Left = 443
+  Height = 700
+  Top = 144
+  Width = 1000
+  ClientHeight = 700
+  ClientWidth = 1000
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  LCLVersion = '1.4.4.0'
+  object Image1: TImage
+    Left = 0
+    Height = 700
+    Top = 0
+    Width = 1000
+    OnMouseMove = Image1MouseMove
+  end
+  object Timer1: TTimer
+    Interval = 12
+    OnTimer = Timer1Timer
+    left = 22
+    top = 17
+  end
+end
