@@ -74,7 +74,7 @@ begin
      with play_health do
         begin
      	     Parent:=Form1;
-             left:=300;
+             left:=50;
              top:=640;
      	     paint(healthpoints,maxhealthpoints);
 	end;

@@ -95,21 +95,21 @@ procedure TPlayerHealthbar.paint(value, maxvalue: integer);
 var bitmap:TBitmap;
 begin
      bitmap:=TBitmap.create;
-     width:=400;
+     width:=300;
      height:=20;
      bitmap.width:=width;
      bitmap.height:=height;
      with bitmap.canvas do
      	  begin
      	       brush.color:=clgreen;
-     	       FillRect(0,0,round(400*value/maxvalue),20);
+     	       FillRect(0,0,round(300*value/maxvalue),20);
 	       brush.color:=clgray;
-	       fillrect(round(400*value/maxvalue),0,400,20);
+	       fillrect(round(300*value/maxvalue),0,300,20);
                brush.style:=bsclear;
                font.color:=clwhite;
                font.Bold:=true;
                textout(5,3,inttostr(value));
-               textout(395-bitmap.canvas.TextWidth(inttostr(maxvalue)),3,inttostr(maxvalue));
+               textout(295-bitmap.canvas.TextWidth(inttostr(maxvalue)),3,inttostr(maxvalue));
 	  end;
      canvas.draw(0,0,bitmap);
      bitmap.Free;
