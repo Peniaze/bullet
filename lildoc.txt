@@ -1,0 +1,31 @@
+    *** levels.txt explanation ***
+
+#1
+
+    -- configuration of the room
+
+    binary
+
+	(open door) north, west, south, east (in this order)
+		== #,#,#,# (0/1 instead of #) --> to decimal
+	(locked door) == #,#,#,#,x,x,x,x (0/1 instead of #) --> to decimal
+
+#2
+
+    -- number of enemies in the room
+
+#3 - #6
+
+    -- configuration of the 1st enemy
+
+	#1 == X position of the enemy
+	#2 == Y position of the enemy
+	#3 == healthpoints of the enemy
+
+#7 - #10
+
+    -- configuration of the 2nd enemy
+
+.
+.
+.
